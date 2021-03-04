@@ -1,8 +1,125 @@
 .App {
+  height: 100vh;
+  width: 100vw;
   text-align: center;
+  background-color: #000;
+}
+*{
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.main {
+  display: flex;
+  padding: 0  !important;
+  margin: 0 !important;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.App-logo {
+.App main span {
+  color: #fff;
+}
+
+.clockbox,
+#clock {
+  width: 100%;
+}
+
+/* Clock styles */
+.circle {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.mid-circle {
+  fill: #fff;
+}
+.hour-marks {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 9;
+  stroke-miterlimit: 10;
+}
+
+.hour-arm {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 17;
+  stroke-miterlimit: 10;
+}
+
+.minute-arm {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 11;
+  stroke-miterlimit: 10;
+}
+
+.second-arm {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+  fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+  transform-origin: 300px 300px;
+  transition: transform .5s ease-in-out;
+}
+/* 
+.theme-dark {
+  stroke: #ffffff;
+}
+
+.theme-dark-bg {
+  background-color: #000;
+}
+
+.theme-lite {
+  stroke: #000;
+}
+
+.theme-lite-bg {
+  background-color: #ffffff;
+}
+
+.theme-dark-fill {
+  fill: #000;
+}
+
+.theme-lite-fill{
+  fill: #ffffff;
+}
+
+.thm-change {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #1CB89A;
+  position: fixed; top: 50px; right: 50px;
+  cursor: pointer;
+}
+.chang p, .chang {
+  color: #1CB89A !important;
+  position: fixed; top: 50px; right: 50px;
+  cursor: pointer;
+} */
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -14,7 +131,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +151,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
