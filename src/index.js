@@ -9,6 +9,7 @@ function clock() {
   const element = (
     <main>
       <h1> Digital Clock</h1>
+      <h1 className='datebox'>Date: {new Date().getDate()} - {new Date().getMonth()} - {new Date().getFullYear()}</h1>
       <div className='App'>
         <h1>{new Date().getHours()}</h1>&nbsp;<strong>:</strong>&nbsp;
         <h1>{new Date().getMinutes()}</h1>&nbsp;<strong>:</strong>&nbsp;
